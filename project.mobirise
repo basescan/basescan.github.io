@@ -1,0 +1,150 @@
+{
+  "settings": {
+    "name": "Basescan",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/bscscan-logo.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://basescan.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://basescan.github.io/sitemap.xml",
+    "mbrsiteDomain": "2aws0tzfxu",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Basescan™ | Home Official Site",
+        "meta_descr": "BaseScan allows you to explore and search the Ethereum blockchain for transactions, addresses, tokens, prices and other activities taking place on Ethereum (ETH).",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://basesan.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/basescan.png\" alt=\"Basescan\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uptnSOXjWr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Basescan: Your Comprehensive Guide to Blockchain Exploration</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the realm of blockchain technology, transparency and accessibility are fundamental principles driving user engagement and trust. As cryptocurrencies and decentralized applications (DApps) become increasingly mainstream, the need for robust tools that allow users to explore and analyze blockchain data has never been more critical. Basescan emerges as a powerful blockchain explorer designed to facilitate this exploration by providing comprehensive insights into transactions, smart contracts, and other vital metrics across various blockchain networks. This blog will delve into the features, benefits, and significance of <a href=\"https://basescan.github.io/\" class=\"text-info\"><b>Basescan</b></a>, as well as its role within the broader blockchain ecosystem.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Basescan?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://basescan.org/\" class=\"text-info\"><b>Basescan</b></a> is a multi-chain blockchain explorer that allows users to track transactions, analyze smart contracts, and explore token data across different blockchain networks. Launched to meet the growing demand for enhanced blockchain analytics, Basescan aims to empower users—whether they are developers, investors, or everyday cryptocurrency enthusiasts—by providing the necessary tools for informed decision-making.<br><br><b>Key Features of Basescan</b><br><b>1.Real-Time Transaction Tracking:</b> Basescan enables users to track individual transactions in real-time. By entering a transaction hash, users can access detailed information, including transaction status, timestamp, block height, and gas fees.<br><b>2.Wallet Insights:</b> Users can input wallet addresses to view comprehensive data about their holdings, transaction history, and asset distributions. This feature is essential for monitoring investments and understanding portfolio performance.<br><b>3.Smart Contract Analysis:</b> Basescan facilitates exploration of smart contracts deployed on various blockchains, allowing users to analyze contract code and interactions. This transparency is critical for verifying the legitimacy and functionality of DApps.<br><b>4.Token Analytics:</b> The platform provides in-depth analytics for different tokens, including price data, market capitalization, trading volumes, and historical performance. This information is vital for investors looking to assess potential investment opportunities.<br><b>5.User-Friendly Interface:</b> Designed with user experience in mind, Basescan’s intuitive interface simplifies navigation and enhances accessibility for both newcomers and seasoned blockchain users.<br><b>6.Cross-Chain Support:</b> Basescan supports a variety of blockchain networks, enabling users to explore multiple ecosystems from a single platform. This capability increases its utility and relevance in the diverse blockchain landscape.<br><b>7.Community Engagement Tools:</b> The platform includes features that foster community interaction, such as discussion forums and social sharing options, allowing users to connect and share insights.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Blockchain Explorers</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Transparency and Trust</b><br>Blockchain technology is built on the principles of transparency and accountability. Explorers like Basescan play a crucial role in promoting these values by providing users with real-time access to blockchain data. This transparency helps build trust within the community and allows users to independently verify transactions.<br><br><b>2. Informed Decision-Making</b><br>Access to accurate and timely information is essential for traders and investors. Basescan equips users with the necessary tools to analyze transactions, monitor token performance, and keep track of their investments. By utilizing Basescan’s comprehensive analytics, users can make informed decisions based on real-time data.<br><br><b>3. Simplifying Complex Data</b><br>The blockchain generates vast amounts of data daily, making it challenging for users to navigate without proper tools. Basescan simplifies this complexity by presenting data in an organized and user-friendly manner, allowing users to access the information they need effortlessly.<br><br><b>4. Fostering Community Engagement</b><br>Blockchain explorers like Basescan promote community engagement by providing insights into transaction volumes, popular tokens, and DApps. This engagement encourages users to participate actively in the ecosystem, driving growth and adoption.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>How to Use Basescan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Step 1: Accessing Basescan</b><br>To get started with Basescan, simply visit the Basescan website. The platform is accessible via web browsers, making it easy to use on both desktop and mobile devices.<br><br><b>Step 2: Tracking Transactions</b><br>To track a specific transaction, enter the transaction hash in the search bar. This will display detailed information about the transaction, including its status, timestamp, block height, and gas fees. This feature is particularly useful for confirming whether a transaction has been successfully processed.<br><br><b>Step 3: Viewing Wallet Information</b><br>To check account balances and transaction history, enter a wallet address in the search bar. This will display all relevant information, including token balances and a list of recent transactions associated with that address. Users can monitor their own wallets or analyze the activities of others.<br><br><b>Step 4: Analyzing Tokens</b><br>If you’re interested in specific tokens, navigate to the \"Tokens\" section. Here, you can search for tokens by name or symbol to view price information, market capitalization, and trading volumes. This data is crucial for assessing the potential of various tokens before making investment decisions.<br><br><b>Step 5: Investigating Smart Contracts</b><br>For those interested in smart contracts, Basescan allows you to search for specific contract addresses. This feature provides insights into the contract code, interactions, and transaction history, ensuring that users can verify the integrity and functionality of DApps.<br><br><b>Step 6: Engaging with the Community</b><br>Basescan fosters community engagement through features that allow users to share insights and discuss trends. Engaging with the community helps users stay informed and connected within the blockchain ecosystem.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Significance of Basescan in the Blockchain Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Supporting Developers</b><br>For developers building on various blockchain networks, Basescan serves as an invaluable resource. The platform provides insights into smart contracts, allowing developers to analyze their code and assess interactions. This transparency fosters a culture of accountability and ensures that developers can optimize their applications for better performance.<br><br><b>2. Enhancing User Experience</b><br>As more users enter the world of blockchain and cryptocurrencies, providing a seamless user experience becomes paramount. Basescan enhances this experience by offering a centralized location for accessing blockchain data. Users can easily track transactions, monitor investments, and explore new tokens all in one place.<br><br><b>3. Promoting Decentralization</b><br>One of the core tenets of blockchain technology is decentralization. Basescan embodies this principle by enabling users to access information independently. This reduces reliance on centralized entities and promotes a more decentralized ecosystem where users can verify transactions and monitor their assets.<br><br><b>4. Driving Adoption</b><br>By facilitating easier access to blockchain data, Basescan plays a crucial role in driving the adoption of various blockchain networks. As users become more comfortable navigating the ecosystem, they are more likely to engage in trading, investing, and participating in DeFi activities.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Future Developments for Basescan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Enhanced Analytics Tools</b><br>As the blockchain landscape continues to grow, Basescan plans to introduce advanced analytics tools that provide deeper insights into transaction patterns, user behavior, and token performance. These tools will empower users to make even more informed decisions.<br><br><b>2. Improved User Experience</b><br>Basescan is committed to continuously improving its user interface and overall experience. Future updates may include personalized dashboards, advanced search filters, and enhanced visualizations to help users better understand the data they are accessing.<br><br><b>3. Community Features</b><br>To foster further community engagement, Basescan is exploring the integration of social features that allow users to share insights, discuss trends, and collaborate on investment strategies. This will help build a stronger community around the various blockchain ecosystems.<br><br><b>4. Cross-Chain Compatibility</b><br>As the DeFi space evolves, cross-chain interactions are becoming increasingly important. Basescan is considering adding features that allow users to track assets and transactions across multiple blockchains, enhancing its utility as a comprehensive blockchain explorer.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases of Basescan</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. For Traders</b><br>For traders, Basescan is an essential tool for monitoring transactions and analyzing token performance. Users can track their own transactions and those of others, identify trends, and execute trades based on real-time data.<br><br><b>2. For Investors</b><br>Investors can leverage Basescan to conduct thorough research before making investment decisions. By analyzing token metrics, transaction history, and market trends, they can gain deeper insights into potential opportunities and risks.<br><br><b>3. For Developers</b><br>Developers building on various blockchain networks can utilize Basescan to test and verify their smart contracts. By monitoring contract interactions and transaction histories, they can ensure that their applications function correctly and efficiently.<br><br><b>4. For Researchers</b><br>Researchers interested in blockchain technology can use Basescan as a valuable resource for studying various blockchain ecosystems. By analyzing transaction patterns, token migrations, and DApp usage, they can gain insights into the functioning of decentralized networks.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Data Overload</b><br>As the blockchain networks continue to grow, the volume of data available on Basescan may become overwhelming for some users. It’s essential for users to develop strategies for efficiently navigating and analyzing this data to avoid information overload.<br><br><b>2. Security Risks</b><br>While Basescan is a powerful tool, users should remain vigilant and practice good security hygiene. Always double-check transaction details and contract addresses before interacting with them to mitigate the risk of scams or phishing attempts.<br><br><b>3. Market Volatility</b><br>The cryptocurrency market is known for its volatility, and Basescan users should be aware of the risks associated with trading and investing. Conducting thorough research and employing sound risk management practices is crucial for success in this space.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Basescan is an indispensable resource for anyone navigating the world of blockchain and cryptocurrencies. By providing real-time access to crucial blockchain data, Basescan empowers traders, developers, and investors to make informed decisions and engage actively in the decentralized finance landscape. Its commitment to transparency, user experience, and community engagement has solidified its position as a leading blockchain explorer.<br><br>As the blockchain ecosystem continues to evolve, Basescan will undoubtedly play a critical role in shaping its future. Whether you’re a newcomer looking to explore the world of decentralized finance or an experienced user seeking detailed insights, Basescan is your go-to resource for all things related to blockchain exploration. With its focus on continuous improvement and innovation, Basescan is well-positioned to remain a vital player in the cryptocurrency landscape for years to come.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uptnT4JNGH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
